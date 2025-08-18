@@ -1,0 +1,55 @@
+{
+  "name": "pasteq-website",
+  "version": "1.0.0",
+  "description": "Official website for PasteQ Mac app",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "serve": "vitepress preview docs --port 4173",
+    "clean": "rm -rf dist docs/.vitepress/dist .vitepress/cache",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:simple": "playwright test e2e-simple.test.ts",
+    "test:e2e:full": "playwright test e2e.test.ts",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "type-check": "vue-tsc --noEmit",
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [
+    "pasteq",
+    "clipboard",
+    "mac",
+    "productivity",
+    "vitepress",
+    "documentation"
+  ],
+  "author": "PasteQ Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^20.10.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/test-utils": "^2.4.0",
+    "glob": "^10.4.5",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "jsdom": "^23.0.0",
+    "playwright": "^1.54.2",
+    "terser": "^5.24.0",
+    "typescript": "^5.3.0",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vitepress": "^1.0.0",
+    "vitest": "^1.0.0",
+    "vue": "^3.4.0",
+    "vue-tsc": "^1.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
