@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 立即下载
-      link: https://apps.apple.com/app/id6443971843
+      link: https://apps.apple.com/cn/app/id6443971843
     - theme: alt
       text: 查看指南
       link: /guide/getting-started
