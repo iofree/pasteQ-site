@@ -24,8 +24,23 @@ export default defineConfig({
     ['meta', { name: 'twitter:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
     ['meta', { name: 'twitter:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
     ['meta', { name: 'twitter:image', content: 'https://pasteq.iofree.xyz/images/app-icon.png' }],
-
-    
+    ['meta', { name: 'author', content: 'iofree' }],
+    ['meta', { name: 'copyright', content: '© 2024 iofree. All rights reserved.' }],
+    ['link', { rel: 'robots', href: '/robots.txt' }],
+    ['script', { 
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'PasteQ',
+        applicationCategory: 'Productivity',
+        operatingSystem: 'macOS',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+        },
+      })
+    }],
   ],
 
   locales: {

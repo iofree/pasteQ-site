@@ -1,6 +1,10 @@
 ---
 layout: home
 title: 悬浮剪贴板，搜索复制粘贴
+description: PasteQ 是一款为 macOS 设计的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。
+head:
+  - [meta, { property: 'og:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴' }]
+  - [meta, { property: 'og:description', content: 'PasteQ 是一款为 macOS 设计的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。' }]
 
 hero:
   name: "PasteQ"

@@ -1,6 +1,10 @@
 ---
 layout: home
 title: Floating Clipboard, Search, Copy, and Paste
+description: PasteQ is a floating clipboard application designed for macOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.
+head:
+  - [meta, { property: 'og:title', content: 'PasteQ - Floating Clipboard, Search, Copy, and Paste' }]
+  - [meta, { property: 'og:description', content: 'PasteQ is a floating clipboard application designed for macOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.' }]
 
 hero:
   name: "PasteQ"
