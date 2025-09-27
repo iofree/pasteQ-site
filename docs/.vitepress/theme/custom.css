@@ -171,3 +171,21 @@ html.dark .vp-feature-icon {
     object-fit: contain;
   }
 }
+
+/* Enhance the primary call-to-action button */
+.VPHero .action .brand {
+  font-size: 18px; /* Slightly larger font */
+  padding: 10px 20px; /* More padding */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.VPHero .action .brand:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Align action buttons to the baseline */
+.VPHero .actions {
+  align-items: flex-end;
+}

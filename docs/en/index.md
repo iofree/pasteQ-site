@@ -15,7 +15,7 @@ hero:
     alt: PasteQ Logo
   actions:
     - theme: brand
-      text: "Download Now"
+      text: "💻📱 Download Now"
       link: https://apps.apple.com/app/id6443971843
     - theme: alt
       text: "View Guide"
