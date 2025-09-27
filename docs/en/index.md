@@ -1,15 +1,15 @@
 ---
 layout: home
 title: Floating Clipboard, Search, Copy, and Paste
-description: PasteQ is a floating clipboard application designed for macOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.
+description: PasteQ is a floating clipboard application designed for macOS and iOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.
 head:
   - [meta, { property: 'og:title', content: 'PasteQ - Floating Clipboard, Search, Copy, and Paste' }]
-  - [meta, { property: 'og:description', content: 'PasteQ is a floating clipboard application designed for macOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.' }]
+  - [meta, { property: 'og:description', content: 'PasteQ is a floating clipboard application designed for macOS and iOS that supports pure keyboard operation, allowing you to efficiently search, copy, and paste without a mouse. All data is stored locally, prioritizing your privacy.' }]
 
 hero:
   name: "PasteQ"
   text: "A Clipboard Tool with Full Keyboard Support"
-  tagline: We know how important privacy is. All your data is stored locally.
+  tagline: Available on macOS and iOS with iCloud sync. We know how important privacy is. All your data is stored locally.
   image:
     src: /images/app-icon.png
     alt: PasteQ Logo
@@ -20,7 +20,6 @@ hero:
     - theme: alt
       text: "View Guide"
       link: /en/guide/getting-started
-
 features:
   - title: "Floats Over Any Application"
     details: "PasteQ's floating window design allows you to easily access your clipboard history from within any application, eliminating the need to switch windows and greatly improving your workflow."
@@ -33,15 +32,25 @@ features:
   - title: "Privacy First"
     details: "We take your privacy very seriously. The app supports offline recognition and encryption of private content, and all data is encrypted and stored locally by default. PasteQ makes no network calls, except when you choose to preview a URL."
   - title: "Data Sync and Migration"
-    details: "Supports syncing data across your Mac devices via iCloud, and also supports free data import and export, giving you complete control over your data."
+    details: "Supports syncing data across your devices via iCloud, and also supports free data import and export, giving you complete control over your data."
 ---
 
 <div style="text-align: center; margin-top: 4rem;">
-  <h2 style="font-size: 2rem; font-weight: 600;">App Screenshots</h2>
-  <p style="margin-top: 1rem; font-size: 1.2rem;">Get a feel for PasteQ's core interface and features.</p>
-  <div class="screenshot-gallery">
-    <img src="/images/screenshots/en.png" alt="PasteQ Screenshot 1">
-    <img src="/images/screenshots/en-setting1.png" alt="PasteQ Screenshot 2">
-    <img src="/images/screenshots/en-setting2.png" alt="PasteQ Screenshot 3">
+  
+  <div class="platform-showcase">
+    <div class="platform-item">
+      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem;">macOS Version</h3>
+      <img src="/images/screenshots/en.png" alt="PasteQ macOS Screenshot" class="main-screenshot">
+      <div class="platform-sub-screenshots">
+        <img src="/images/screenshots/en-setting1.png" alt="PasteQ Settings Screenshot 1" class="sub-screenshot">
+        <img src="/images/screenshots/en-setting2.png" alt="PasteQ Settings Screenshot 2" class="sub-screenshot">
+      </div>
+    </div>
+    <div class="platform-item">
+      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem;">iOS Version</h3>
+      <img src="/images/screenshots/iphone-en.png" alt="PasteQ iOS Screenshot" class="mobile-screenshot">
+    </div>
   </div>
 </div>
+
+

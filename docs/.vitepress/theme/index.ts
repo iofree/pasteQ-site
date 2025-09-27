@@ -50,7 +50,10 @@ export default {
       localStorage.setItem(LANG_STORAGE_KEY, currentLang);
     };
 
-    onMounted(handleInitialLoad);
+    onMounted(() => {
+      handleInitialLoad();
+      setupScreenshotEnlarge();
+    });
 
     // This watcher ONLY updates the preference when the user clicks a link
     // to navigate between language versions AFTER the initial load.
@@ -66,5 +69,81 @@ export default {
         }
       }
     );
+
+    // 设置截图点击放大功能
+    const setupScreenshotEnlarge = () => {
+      if (typeof window === 'undefined') return;
+
+      const addClickHandlers = () => {
+        const subScreenshots = document.querySelectorAll('.sub-screenshot');
+        
+        subScreenshots.forEach(img => {
+          // 移除之前的事件监听器（如果有的话）
+          img.removeEventListener('click', handleScreenshotClick);
+          // 添加新的事件监听器
+          img.addEventListener('click', handleScreenshotClick);
+        });
+      };
+
+      const handleScreenshotClick = (event) => {
+        const img = event.target;
+        const isEnlarged = img.classList.contains('enlarged');
+
+        if (isEnlarged) {
+          // 恢复原始大小
+          img.classList.remove('enlarged');
+          removeOverlay();
+        } else {
+          // 放大显示
+          img.classList.add('enlarged');
+          createOverlay();
+        }
+      };
+
+      const createOverlay = () => {
+        // 移除已存在的遮罩层
+        removeOverlay();
+        
+        const overlay = document.createElement('div');
+        overlay.className = 'screenshot-overlay';
+        overlay.addEventListener('click', () => {
+          const enlargedImg = document.querySelector('.sub-screenshot.enlarged');
+          if (enlargedImg) {
+            enlargedImg.classList.remove('enlarged');
+          }
+          removeOverlay();
+        });
+        
+        document.body.appendChild(overlay);
+        
+        // 触发显示动画
+        setTimeout(() => {
+          overlay.classList.add('show');
+        }, 10);
+      };
+
+      const removeOverlay = () => {
+        const overlay = document.querySelector('.screenshot-overlay');
+        if (overlay) {
+          overlay.classList.remove('show');
+          setTimeout(() => {
+            overlay.remove();
+          }, 300);
+        }
+      };
+
+      // 初始设置
+      setTimeout(addClickHandlers, 100);
+      
+      // 监听路由变化，重新设置事件监听器
+      const observer = new MutationObserver(() => {
+        setTimeout(addClickHandlers, 100);
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    };
   }
 }

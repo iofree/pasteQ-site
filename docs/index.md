@@ -1,15 +1,15 @@
 ---
 layout: home
 title: 悬浮剪贴板，搜索复制粘贴
-description: PasteQ 是一款为 macOS 设计的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。
+description: PasteQ 是一款支持 macOS 和 iOS 的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。
 head:
   - [meta, { property: 'og:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴' }]
-  - [meta, { property: 'og:description', content: 'PasteQ 是一款为 macOS 设计的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。' }]
+  - [meta, { property: 'og:description', content: 'PasteQ 是一款支持 macOS 和 iOS 的悬浮剪贴板应用，支持纯键盘操作，让您无需鼠标即可高效完成搜索、复制和粘贴。所有数据本地存储，注重您的隐私安全。' }]
 
 hero:
   name: "PasteQ"
   text: "支持纯键盘操作的剪贴板工具"
-  tagline: 我们深知隐私的重要性，您的所有数据都将存储在本地。
+  tagline: 支持 macOS 和 iOS 双端，iCloud 同步。我们深知隐私的重要性，您的所有数据都将存储在本地。
   image:
     src: /images/app-icon.png
     alt: PasteQ Logo
@@ -20,7 +20,6 @@ hero:
     - theme: alt
       text: 查看指南
       link: /guide/getting-started
-
 features:
   - title: "悬浮于任何应用之上"
     details: "PasteQ 的悬浮窗口设计，让您在任何应用中都能轻松访问剪贴板历史，无需切换窗口，大大提升工作效率。"
@@ -33,17 +32,27 @@ features:
   - title: "隐私至上"
     details: "我们极其注重您的隐私安全。应用支持离线识别并加密隐私内容，所有数据默认在本地加密存储。除了您选择预览网址外，PasteQ 不会进行任何网络调用。"
   - title: "数据同步与迁移"
-    details: "支持通过 iCloud 在您的多台 Mac 设备间同步数据，也支持数据的自由导入和导出，让您的数据完全由您掌控。"
+    details: "支持通过 iCloud 在您的多台设备间同步数据，也支持数据的自由导入和导出，让您的数据完全由您掌控。"
 ---
 
 <div style="text-align: center; margin-top: 4rem;">
-  <h2 style="font-size: 2rem; font-weight: 600;">应用截图</h2>
-  <p style="margin-top: 1rem; font-size: 1.2rem;">直观感受 PasteQ 的核心界面与功能。</p>
-  <div class="screenshot-gallery">
-    <img src="/images/screenshots/zh.png" alt="PasteQ 截图 1">
-    <img src="/images/screenshots/zh-setting1.png" alt="PasteQ 截图 2">
-    <img src="/images/screenshots/zh-setting2.png" alt="PasteQ 截图 3">
+  
+  <div class="platform-showcase">
+    <div class="platform-item">
+      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem;">macOS 版本</h3>
+      <img src="/images/screenshots/zh.png" alt="PasteQ macOS 截图" class="main-screenshot">
+      <div class="platform-sub-screenshots">
+        <img src="/images/screenshots/zh-setting1.png" alt="PasteQ 设置截图 1" class="sub-screenshot">
+        <img src="/images/screenshots/zh-setting2.png" alt="PasteQ 设置截图 2" class="sub-screenshot">
+      </div>
+    </div>
+    <div class="platform-item">
+      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem;">iOS 版本</h3>
+      <img src="/images/screenshots/iphone-zh.png" alt="PasteQ iOS 截图" class="mobile-screenshot">
+    </div>
   </div>
 </div>
+
+
 
 

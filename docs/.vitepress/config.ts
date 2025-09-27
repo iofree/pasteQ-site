@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'PasteQ',
   titleTemplate: ':title - PasteQ',
-  description: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标',
+  description: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS',
   cleanUrls: true,
   outDir: '../dist',
 
@@ -13,16 +13,16 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/images/app-icon.png' }],
     
     ['meta', { name: 'theme-color', content: '#007AFF' }],
-    ['meta', { name: 'keywords', content: 'PasteQ, Raycast, clipboard, mac, app, download, free, search, copy, paste, 剪贴板, mac, app, 下载, 免费, 搜索, 复制, 粘贴' }],
+    ['meta', { name: 'keywords', content: 'PasteQ, Raycast, clipboard, mac, ios, iphone, ipad, app, download, free, search, copy, paste, 剪贴板, mac, ios, app, 下载, 免费, 搜索, 复制, 粘贴' }],
     ['link', { rel: 'canonical', href: 'https://pasteq.iofree.xyz' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
-    ['meta', { property: 'og:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
+    ['meta', { property: 'og:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
+    ['meta', { property: 'og:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
     ['meta', { property: 'og:image', content: 'https://pasteq.iofree.xyz/images/app-icon.png' }],
     ['meta', { property: 'og:url', content: 'https://pasteq.iofree.xyz' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
-    ['meta', { name: 'twitter:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标' }],
+    ['meta', { name: 'twitter:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
+    ['meta', { name: 'twitter:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
     ['meta', { name: 'twitter:image', content: 'https://pasteq.iofree.xyz/images/app-icon.png' }],
     ['meta', { name: 'author', content: 'iofree' }],
     ['meta', { name: 'copyright', content: '© 2024 iofree. All rights reserved.' }],
@@ -34,7 +34,7 @@ export default defineConfig({
         '@type': 'SoftwareApplication',
         name: 'PasteQ',
         applicationCategory: 'Productivity',
-        operatingSystem: 'macOS',
+        operatingSystem: ['macOS', 'iOS'],
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -84,7 +84,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      description: 'PasteQ - Floating clipboard, search, copy, and paste with pure keyboard shortcuts.',
+      description: 'PasteQ - Floating clipboard, search, copy, and paste with pure keyboard shortcuts. Available on macOS and iOS.',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
