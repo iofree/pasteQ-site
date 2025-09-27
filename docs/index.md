@@ -11,7 +11,7 @@ hero:
   text: "支持纯键盘操作的剪贴板工具"
   tagline: 支持 macOS 和 iOS 双端，iCloud 同步。我们深知隐私的重要性，您的所有数据都将存储在本地。
   image:
-    src: /images/app-icon.png
+    src: /images/screenshots/zh.png
     alt: PasteQ Logo
   actions:
     - theme: brand

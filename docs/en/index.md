@@ -11,7 +11,7 @@ hero:
   text: "A Clipboard Tool with Full Keyboard Support"
   tagline: Available on macOS and iOS with iCloud sync. We know how important privacy is. All your data is stored locally.
   image:
-    src: /images/app-icon.png
+    src: /images/screenshots/en.png
     alt: PasteQ Logo
   actions:
     - theme: brand

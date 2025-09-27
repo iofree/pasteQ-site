@@ -2,6 +2,12 @@ html.dark .vp-feature-icon {
   filter: invert(1);
 }
 
+.VPHero .image-src {
+  max-height: 350px !important;
+  max-width: 683px !important;
+  object-fit: contain !important;
+}
+
 .screenshot-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -114,6 +120,10 @@ html.dark .vp-feature-icon {
 }
 
 @media (max-width: 768px) {
+  .VPHero .image-src {
+    max-height: 240px !important;
+  }
+
   .screenshot-gallery img {
     width: 100%;
     max-width: 100%;
