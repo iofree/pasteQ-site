@@ -66,6 +66,7 @@ export default defineConfig({
               text: '关于App',
               items: [
                 { text: '开发初衷', link: '/guide/development-motivation' },
+                { text: '多设备同步', link: '/guide/multi-device-sync' },
               ]
             },
             {
@@ -104,6 +105,7 @@ export default defineConfig({
               text: 'About App',
               items: [
                 { text: 'Motivation', link: '/en/guide/development-motivation' },
+                { text: 'Multi-Device Sync', link: '/en/guide/multi-device-sync' },
               ]
             },
             {
