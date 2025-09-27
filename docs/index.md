@@ -35,7 +35,7 @@ features:
     details: "支持通过 iCloud 在您的多台设备间同步数据，也支持数据的自由导入和导出，让您的数据完全由您掌控。"
 ---
 
-<div style="text-align: center; margin-top: 4rem;">
+<div style="display: flex; justify-content: center; margin-top: 4rem;">
   
   <div class="platform-showcase">
     <div class="platform-item">

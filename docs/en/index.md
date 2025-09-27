@@ -35,7 +35,7 @@ features:
     details: "Supports syncing data across your devices via iCloud, and also supports free data import and export, giving you complete control over your data."
 ---
 
-<div style="text-align: center; margin-top: 4rem;">
+<div style="display: flex; justify-content: center; margin-top: 4rem;">
   
   <div class="platform-showcase">
     <div class="platform-item">
