@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: Read the PasteQ privacy policy, including terms covering information use, disclosure, storage and policy updates.
 ---
 # Product Privacy Policy and Terms of Use
 

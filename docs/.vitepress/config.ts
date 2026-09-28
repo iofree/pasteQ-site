@@ -1,47 +1,33 @@
 import { defineConfig } from 'vitepress'
+import { pageHead } from './seo'
 
 export default defineConfig({
   title: 'PasteQ',
   titleTemplate: ':title - PasteQ',
-  description: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS',
+  description: 'PasteQ 是 Mac、iPhone 和 iPad 剪贴板管理工具，支持历史搜索、来源筛选、iCloud 同步与常用文本快捷键盘。',
+  lang: 'zh-CN',
   cleanUrls: true,
   outDir: '../dist',
 
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/images/app-icon.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/images/app-icon.png' }],
-    
+    ['link', { rel: 'apple-touch-icon', href: '/images/app-icon.png' }],
     ['meta', { name: 'theme-color', content: '#007AFF' }],
-    ['meta', { name: 'keywords', content: 'PasteQ, Raycast, clipboard, mac, ios, iphone, ipad, app, download, free, search, copy, paste, 剪贴板, mac, ios, app, 下载, 免费, 搜索, 复制, 粘贴' }],
-    ['link', { rel: 'canonical', href: 'https://pasteq.iofree.xyz' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
-    ['meta', { property: 'og:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
-    ['meta', { property: 'og:image', content: 'https://pasteq.iofree.xyz/images/app-icon.png' }],
-    ['meta', { property: 'og:url', content: 'https://pasteq.iofree.xyz' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
-    ['meta', { name: 'twitter:description', content: 'PasteQ - 悬浮剪贴板，搜索复制粘贴，纯快捷键无需鼠标，支持 macOS 和 iOS' }],
-    ['meta', { name: 'twitter:image', content: 'https://pasteq.iofree.xyz/images/app-icon.png' }],
     ['meta', { name: 'author', content: 'iofree' }],
-    ['meta', { name: 'copyright', content: '© 2024 iofree. All rights reserved.' }],
-    ['link', { rel: 'robots', href: '/robots.txt' }],
-    ['script', { 
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareApplication',
-        name: 'PasteQ',
-        applicationCategory: 'Productivity',
-        operatingSystem: ['macOS', 'iOS'],
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-        },
-      })
-    }],
+    ['meta', { name: 'apple-itunes-app', content: 'app-id=6443971843' }],
   ],
+
+  transformPageData(pageData, { siteConfig }) {
+    pageData.frontmatter.head = [
+      ...(pageData.frontmatter.head || []),
+      ...pageHead(pageData, siteConfig.srcDir),
+    ]
+  },
+
+  transformHead({ pageData }) {
+    if (pageData.isNotFound) return [['meta', { name: 'robots', content: 'noindex, follow' }]]
+  },
 
   locales: {
     root: {
@@ -51,7 +37,7 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/' },
           { text: '指南', link: '/guide/getting-started' },
-          { text: 'App Store', link: 'https://apps.apple.com/app/id6443971843' }
+          { text: 'App Store', link: 'https://apps.apple.com/cn/app/id6443971843' }
         ],
         sidebar: {
           '/guide/': [
@@ -59,6 +45,7 @@ export default defineConfig({
               text: '使用指南',
               items: [
                 { text: '快速上手', link: '/guide/getting-started' },
+                { text: 'iPhone 快捷键盘', link: '/guide/iphone-keyboard' },
                 { text: '常见问题', link: '/guide/faq' },
               ],
             },
@@ -85,7 +72,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      description: 'PasteQ - Floating clipboard, search, copy, and paste with pure keyboard shortcuts. Available on macOS and iOS.',
+      description: 'PasteQ is a clipboard manager for Mac, iPhone and iPad with history search, source filters, iCloud sync and a keyboard for saved snippets.',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
@@ -98,6 +85,7 @@ export default defineConfig({
               text: 'User Guide',
               items: [
                 { text: 'Getting Started', link: '/en/guide/getting-started' },
+                { text: 'iPhone Keyboard', link: '/en/guide/iphone-keyboard' },
                 { text: 'FAQ', link: '/en/guide/faq' },
               ],
             },
@@ -130,7 +118,8 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://pasteq.iofree.xyz'
+    hostname: 'https://pasteq.iofree.xyz',
+    transformItems: (items) => items.filter((item) => !/^404(?:\.html)?$/.test(item.url)),
   },
   lastUpdated: true,
 })

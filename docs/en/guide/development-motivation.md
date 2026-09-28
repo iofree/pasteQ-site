@@ -1,5 +1,6 @@
 ---
 title: Development Motivation
+description: Why PasteQ was built — a keyboard-first clipboard workflow with history search, pinned content, custom groups and data management.
 ---
 
 # Development Motivation

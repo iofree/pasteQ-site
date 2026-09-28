@@ -1,3 +1,8 @@
+---
+title: Contact and Support
+description: Contact the PasteQ developer for Mac, iPhone and iPad support, bug reports and feature requests. Include your app version and steps to reproduce the issue.
+---
+
 # Contact Us
 
 ## Feedback / Feature Request

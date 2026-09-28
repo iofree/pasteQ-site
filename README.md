@@ -44,7 +44,7 @@ npm run dev
 npm run build
 ```
 
-生成的静态文件将位于 `docs/.vitepress/dist`。
+生成的静态文件将位于 `dist`。
 
 ### 预览
 
@@ -56,4 +56,8 @@ npm run preview
 
 ### 项目结构
 
-文档内容位于 `docs/` 目录中。它支持多种语言，其中英文内容在 `docs/en/` 下，中文内容在 `docs/guide/` 下（或直接在 `docs/` 下作为默认语言）。
+文档内容位于 `docs/` 目录中。它支持多种语言，其中英文内容在 `docs/en/` 下，中文内容在 `docs/` 下作为默认语言。
+
+每页通过 `docs/.vitepress/seo.ts` 生成 canonical、语言替代链接、分享元数据和结构化数据；语言由访问 URL 决定，不按浏览器偏好强制跳转。
+
+构建后运行 `npm run validate`，检查生成页面的 SEO 元数据、站点地图、图片和内部链接。GitHub Pages 部署前也会执行此检查。

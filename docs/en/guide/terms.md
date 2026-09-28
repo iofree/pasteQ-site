@@ -1,5 +1,6 @@
 ---
 title: Terms of Service
+description: Read the PasteQ terms of service, including app use, subscriptions, renewals and related service terms.
 ---
 # Subscription Service Agreement
 
