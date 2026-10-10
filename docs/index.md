@@ -1,12 +1,12 @@
 ---
 layout: home
 title: Mac 剪贴板管理与 iPhone 快捷键盘
-description: PasteQ 帮你在 Mac 保存和搜索剪贴板历史、按来源查找内容，通过 iCloud 同步到 iPhone 与 iPad，并用快捷键盘复用 Pin 和分组中的常用文本。
+description: PasteQ 支持 Mac 剪贴板历史搜索与来源筛选。iPhone 配置快捷指令后，复制文本或链接、轻点背面主动收集，再用扩展键盘复用；支持 iCloud 多设备同步。
 
 hero:
   name: "PasteQ"
   text: "Mac 上复制，<br>iPhone 接着用"
-  tagline: 找回复制过的内容，按来源快速查找。通过 iCloud 同步，把 Pin 和分组中的常用文本带进 iPhone 输入框。
+  tagline: Mac 找回复制历史，按来源快速查找。iPhone 复制后轻点背面主动收集，用 PasteQ 键盘复用常用文本。支持 iCloud 多设备同步。
   image:
     src: /images/screenshots/mac-iphone-overview-zh.webp
     alt: Mac 上存好，iPhone 键盘直接用：PasteQ 通过 iCloud 同步常用文本，支持 Pin、分组、来源查找与 Mac 快捷键
@@ -37,8 +37,8 @@ features:
     details: "在使用同一 Apple 账户并启用 iCloud 的 Mac、iPhone 和 iPad 间同步。打开手机上的 PasteQ，接着查找和整理记录。"
     link: /guide/multi-device-sync
   - title: "iPhone 常用文本快捷键盘"
-    details: "在支持第三方键盘的输入框里，点选 Pin 或分组中的常用文本直接填入。使用 PasteQ 键盘无需开启“允许完全访问”。"
-    link: /guide/iphone-keyboard
+    details: "配置快捷指令后，复制文本或链接、轻点背面收集，再从键盘“已固定”点选复用。保留默认自动固定；键盘无需开启“允许完全访问”。"
+    link: /guide/back-tap-clipboard
 ---
 
 ## 从 Mac 到 iPhone，常用回复这样接着用
@@ -71,6 +71,24 @@ features:
   </div>
 </div>
 
+## iPhone 轻点背面收集，键盘接着用 {#back-tap}
+
+手机写稿时的一段提纲、发内容时的作者简介、回复合作时的作品链接，都可以留着再用。配置好 PasteQ 快捷指令与键盘后，每复制一条文本或链接，再轻点背面主动收集；调出 PasteQ 扩展键盘，从“已固定”逐条点选插入，无需先打开主 App。
+
+<FeatureShowcase type="back-tap" />
+
+快捷收集需要 iOS 16+；轻点背面适用于兼容的 iPhone，iPadOS 16+ 可直接运行快捷指令。键盘适用于支持第三方键盘的输入框。
+
+[设置轻点背面与手机快捷收集 →](/guide/back-tap-clipboard) · [了解 PasteQ 扩展键盘](/guide/iphone-keyboard)
+
+## 记得来自哪个 App，就按来源筛选 {#source-filters}
+
+想找浏览器里复制的链接，或某个工作 App 中保存的文字？PasteQ 在 Mac 识别复制内容的来源应用。先选择来源，再输入关键词，就能缩小剪贴板历史的查找范围；通过 iCloud 同步到 iPhone 的记录，也可以按来源查找。
+
+<FeatureShowcase type="source-filter" />
+
+[查看 Mac 与 iPhone 来源筛选用法 →](/guide/getting-started#source-filters)
+
 ## 下载前，你可能想了解
 
 ### PasteQ 和苹果通用剪贴板有什么不同？
@@ -79,7 +97,7 @@ features:
 
 ### iPhone 会一直在后台记录复制内容吗？
 
-不会。Mac 的剪贴板记录和 iPhone 的使用方式不同，不应把 iOS 端理解为持续后台采集所有 App 的剪贴板。手机上可以查看同步记录，并通过快捷键盘复用已保存的常用文本。
+不会。iPhone 上每条文本或链接都在你运行快捷指令或触发轻点背面时主动收集，复制动作本身不会启动持续后台采集。保留默认开启的“自动固定”后，可通过 PasteQ 键盘的“已固定”取用。[查看首次设置与适用条件](/guide/back-tap-clipboard)。
 
 ### 数据保存在本地还是 iCloud？
 

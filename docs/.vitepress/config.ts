@@ -4,7 +4,7 @@ import { pageHead } from './seo'
 export default defineConfig({
   title: 'PasteQ',
   titleTemplate: ':title - PasteQ',
-  description: 'PasteQ 是 Mac、iPhone 和 iPad 剪贴板管理工具，支持历史搜索、来源筛选、iCloud 同步与常用文本快捷键盘。',
+  description: 'PasteQ 是 Mac、iPhone 和 iPad 剪贴板管理工具，支持历史搜索、来源筛选、iCloud 同步、iPhone 轻点背面收集与常用文本快捷键盘。',
   lang: 'zh-CN',
   cleanUrls: true,
   outDir: '../dist',
@@ -45,6 +45,7 @@ export default defineConfig({
               text: '使用指南',
               items: [
                 { text: '快速上手', link: '/guide/getting-started' },
+                { text: '轻点背面收集', link: '/guide/back-tap-clipboard' },
                 { text: 'iPhone 快捷键盘', link: '/guide/iphone-keyboard' },
                 { text: '常见问题', link: '/guide/faq' },
               ],
@@ -72,7 +73,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      description: 'PasteQ is a clipboard manager for Mac, iPhone and iPad with history search, source filters, iCloud sync and a keyboard for saved snippets.',
+      description: 'PasteQ is a clipboard manager for Mac, iPhone and iPad with history search, source filters, iCloud sync, iPhone Back Tap capture and a keyboard for saved snippets.',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
@@ -85,6 +86,7 @@ export default defineConfig({
               text: 'User Guide',
               items: [
                 { text: 'Getting Started', link: '/en/guide/getting-started' },
+                { text: 'Back Tap Capture', link: '/en/guide/back-tap-clipboard' },
                 { text: 'iPhone Keyboard', link: '/en/guide/iphone-keyboard' },
                 { text: 'FAQ', link: '/en/guide/faq' },
               ],

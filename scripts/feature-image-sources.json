@@ -1,0 +1,76 @@
+[
+  {
+    "file": "source-filter-mac.webp",
+    "source": "macOS-来源筛选-原图.png",
+    "sourceDirectory": "宣传/截图",
+    "crop": [
+      1635,
+      214,
+      2100,
+      840
+    ],
+    "width": 465,
+    "height": 626,
+    "note": "真实截图：仅裁切来源菜单"
+  },
+  {
+    "file": "source-filter-iphone.webp",
+    "source": "ios来源筛选.PNG",
+    "sourceDirectory": "宣传/截图",
+    "crop": [
+      0,
+      1148,
+      1206,
+      2622
+    ],
+    "width": 804,
+    "height": 983,
+    "note": "真实截图：仅裁切来源选择面板并缩小"
+  },
+  {
+    "file": "back-tap-notification-zh.webp",
+    "source": "素材/back-tap-notification.png",
+    "sourceDirectory": "AppStore创意素材/2026-10-09/制作源文件",
+    "crop": null,
+    "width": 770,
+    "height": 253,
+    "note": "用户系统提示截图局部"
+  },
+  {
+    "file": "back-tap-notification-en.webp",
+    "source": "v3-assets-en/back-tap-notification-en-localized.png",
+    "sourceDirectory": "AppStore创意素材/2026-10-09/制作源文件",
+    "crop": null,
+    "width": 770,
+    "height": 253,
+    "note": "沿用已有系统提示截图的英文合成版"
+  },
+  {
+    "file": "back-tap-keyboard-zh.webp",
+    "source": "v4-search-assets/iphone-keyboard-address-pinned-ZH.png",
+    "sourceDirectory": "AppStore创意素材/2026-10-09/制作源文件",
+    "crop": [
+      0,
+      0,
+      1206,
+      903
+    ],
+    "width": 1000,
+    "height": 749,
+    "note": "沿用真实截图底图与示例内容合成，裁切到完整前两条记录"
+  },
+  {
+    "file": "back-tap-keyboard-en.webp",
+    "source": "v4-search-assets/iphone-keyboard-address-pinned-EN.png",
+    "sourceDirectory": "AppStore创意素材/2026-10-09/制作源文件",
+    "crop": [
+      0,
+      0,
+      1206,
+      903
+    ],
+    "width": 1000,
+    "height": 749,
+    "note": "沿用真实截图底图与英文示例内容合成，裁切到完整前两条记录"
+  }
+]

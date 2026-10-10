@@ -1,9 +1,13 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import { onMounted, onUnmounted } from 'vue'
+import FeatureShowcase from './components/FeatureShowcase.vue'
 
 export default {
   ...DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('FeatureShowcase', FeatureShowcase)
+  },
   setup() {
     let cleanup: (() => void) | undefined;
 
@@ -22,7 +26,7 @@ export default {
 
       const enlarge = (event: MouseEvent | KeyboardEvent) => {
         const target = event.target;
-        if (!(target instanceof HTMLImageElement) || !target.classList.contains('sub-screenshot')) return;
+        if (!(target instanceof HTMLImageElement) || !(target.classList.contains('sub-screenshot') || target.classList.contains('feature-screenshot'))) return;
         if (event instanceof KeyboardEvent && event.key !== 'Enter' && event.key !== ' ') return;
         event.preventDefault();
         trigger = target;

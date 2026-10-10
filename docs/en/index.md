@@ -1,12 +1,12 @@
 ---
 layout: home
 title: Clipboard Manager for Mac, iPhone & iPad
-description: Save and search Mac clipboard history with PasteQ. Filter by source, sync with iCloud, and reuse pinned text on iPhone and iPad with the snippet keyboard.
+description: Search Mac clipboard history and filter by source. Set up Back Tap on iPhone to capture copied text and links, then reuse them with the PasteQ keyboard.
 
 hero:
   name: "PasteQ"
   text: "Copy on Mac.<br>Reuse on iPhone."
-  tagline: Find what you copied, filter by its source, and sync with iCloud. Bring your pinned text and groups into iPhone text fields with the PasteQ keyboard.
+  tagline: Find Mac clipboard history by source. On iPhone, copy text, capture it with Back Tap, and reuse it with the PasteQ keyboard. Sync your devices with iCloud.
   image:
     src: /images/screenshots/mac-iphone-overview-en.webp
     alt: Save on Mac and paste on iPhone with PasteQ, iCloud sync, groups, source filters and keyboard shortcuts
@@ -37,8 +37,8 @@ features:
     details: "Sync across Mac, iPhone and iPad using the same Apple Account with iCloud enabled. Open PasteQ on your phone to find and organize synced records."
     link: /en/guide/multi-device-sync
   - title: "A keyboard for your saved text"
-    details: "Insert text from Pin or custom groups into fields that support third-party keyboards on iPhone. The PasteQ keyboard does not require Allow Full Access."
-    link: /en/guide/iphone-keyboard
+    details: "Set up the shortcut, copy text or a link, and capture it with Back Tap. Keep automatic pinning enabled to reuse it from Pinned. No Allow Full Access required."
+    link: /en/guide/back-tap-clipboard
 ---
 
 ## Take a saved reply from Mac to iPhone
@@ -71,6 +71,24 @@ features:
   </div>
 </div>
 
+## Copy text. Back Tap. Reuse on iPhone. {#back-tap}
+
+An outline for your next draft, a short bio for a new post, or a portfolio link for a collaboration reply. Set up the PasteQ shortcut and keyboard, copy text or a link, then trigger Back Tap to capture that item. Open the PasteQ keyboard and pick items from Pinned to insert them one by one, without opening the main app first.
+
+<FeatureShowcase type="back-tap" />
+
+Quick capture requires iOS 16+. Back Tap needs a compatible iPhone; on iPadOS 16+, run the shortcut directly. The keyboard works in fields that support third-party keyboards.
+
+[Set up Back Tap and quick capture →](/en/guide/back-tap-clipboard) · [Explore the PasteQ keyboard](/en/guide/iphone-keyboard)
+
+## Remember the app? Filter your clipboard by source. {#source-filters}
+
+Looking for a link copied in your browser, or text saved from a work app? PasteQ identifies source apps on Mac. Choose a source, then search by keyword to narrow down your clipboard history. Records synced to iPhone through iCloud can also be filtered by source.
+
+<FeatureShowcase type="source-filter" />
+
+[Learn how source filters work on Mac and iPhone →](/en/guide/getting-started#source-filters)
+
 ## Before you download
 
 ### How is PasteQ different from Universal Clipboard?
@@ -79,7 +97,7 @@ Apple's Universal Clipboard helps you transfer something you just copied to anot
 
 ### Does iPhone record everything I copy in the background?
 
-No. Clipboard recording on Mac and the iPhone workflow are different. The iOS app should not be treated as a continuous background recorder for every app. On your phone, you can find synced records and reuse saved text through the keyboard.
+No. On iPhone, each text item or link is captured when you run the shortcut or trigger Back Tap. Copying alone does not start continuous background recording. Keep automatic pinning enabled (the default) to reuse captured items from Pinned in the PasteQ keyboard. [See setup and requirements](/en/guide/back-tap-clipboard).
 
 ### Is my data local or in iCloud?
 

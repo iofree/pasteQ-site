@@ -11,7 +11,7 @@ PasteQ syncs records through your personal iCloud account. Save and organize a c
 
 [Apple's Universal Clipboard](https://support.apple.com/en-us/102430) lets you paste recently copied content on another device. That content remains available briefly or until another item replaces it. PasteQ lets you save, search and organize clipboard records to find them later.
 
-The Mac app records clipboard history while running and identifies source apps. On iOS, you can view synced records, search by source, and manually add or edit content. PasteQ does not continuously save everything copied in other iOS apps in the background.
+The Mac app records clipboard history while running and identifies source apps. On iOS, you can run a shortcut to capture text and links, view synced records, search by source, and manually add or edit content. PasteQ does not continuously save everything copied in other iOS apps in the background.
 
 ## Set Up iCloud Sync
 
@@ -21,13 +21,19 @@ The Mac app records clipboard history while running and identifies source apps. 
 4. Open PasteQ on both devices and check the sync status. Use manual sync in the sync settings if needed.
 5. Try a short text record and confirm that it appears on the other device before organizing more Pin items and groups.
 
-Sync requires a network connection. Timing depends on your connection, iCloud availability and whether the app is running. After adding or editing content, open PasteQ on your iPhone to confirm the update before using it in the keyboard.
+Sync requires a network connection. Timing depends on your connection, iCloud availability and whether the app is running. After adding or editing content on another device, open PasteQ on your iPhone to confirm the synced update before using it in the keyboard.
 
 ## Take a Saved Mac Reply to iPhone
 
 For example, copy a common email reply on your Mac and add it to Pin. After enabling sync, open PasteQ on your iPhone and confirm that the text is there. In an input field that supports third-party keyboards, switch to PasteQ, select Pin and tap the reply.
 
-The keyboard uses local text updated by the main app. When the main app is not running, the keyboard shows its last updated content. Images, files and encrypted records cannot be inserted directly from the keyboard. See the [iPhone keyboard guide](./iphone-keyboard) for the full setup.
+For synced records, the keyboard uses local text updated by the main app. When the main app is not running, the keyboard may still show its last updated synced content. Images, files and encrypted records cannot be inserted directly from the keyboard. See the [iPhone keyboard guide](./iphone-keyboard) for the full setup.
+
+## Take Items Captured on Your Phone to Mac
+
+After capturing text or links with [Back Tap or the shortcut](./back-tap-clipboard), open the main PasteQ app on your phone to add those items to your library. Use the same Apple Account and enable iCloud sync on both devices. Once syncing has completed, you can find, organize and reuse the records on Mac.
+
+With automatic pinning enabled (the default), captured items are available directly from Pinned in the phone keyboard without opening the main app first. To use them on Mac, complete the library and sync steps above.
 
 ## What If a Record Has Not Synced?
 

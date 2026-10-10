@@ -66,8 +66,8 @@ export function pageHead(page: PageData, srcDir: string): HeadConfig[] {
         operatingSystem: 'macOS, iOS, iPadOS',
         downloadUrl: `https://apps.apple.com/${english ? '' : 'cn/'}app/id6443971843`,
         featureList: english
-          ? ['Clipboard history search', 'Source filters', 'Pin and custom groups', 'iCloud sync', 'iPhone snippet keyboard']
-          : ['剪贴板历史搜索', '来源筛选', 'Pin 与自定义分组', 'iCloud 同步', 'iPhone 常用文本快捷键盘'],
+          ? ['Mac clipboard history search', 'Source app filters on Mac and synced records on iOS', 'User-triggered text and link capture with Shortcuts and iPhone Back Tap', 'Pin and custom groups', 'iCloud sync', 'iPhone snippet keyboard without Allow Full Access']
+          : ['Mac 剪贴板历史搜索', 'Mac 与 iOS 同步记录的来源应用筛选', '通过快捷指令与 iPhone 轻点背面主动收集文本和链接', 'Pin 与自定义分组', 'iCloud 同步', '无需完全访问的 iPhone 常用文本快捷键盘'],
       },
     ],
   } : {
