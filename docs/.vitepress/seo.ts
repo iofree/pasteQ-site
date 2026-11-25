@@ -14,8 +14,8 @@ export function pageHead(page: PageData, srcDir: string): HeadConfig[] {
   const source = page.relativePath.replace(/^en\//, '')
   const url = origin + route(page.relativePath)
   const title = `${page.title} - PasteQ`
-  const image = `${origin}/images/screenshots/${english ? 'en' : 'zh'}.png`
-  const imageAlt = english ? 'PasteQ clipboard history and search on Mac' : 'PasteQ Mac 剪贴板历史与搜索界面'
+  const image = `${origin}/images/screenshots/clipboard-launcher-social-${english ? 'en' : 'zh'}.png`
+  const imageAlt = english ? 'PasteQ clipboard history and Mac app launcher, with support for Mac and iOS' : 'PasteQ 剪贴板与 Mac 应用启动器，支持 Mac 与 iOS'
   const head: HeadConfig[] = [
     ['link', { rel: 'canonical', href: url }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -25,8 +25,8 @@ export function pageHead(page: PageData, srcDir: string): HeadConfig[] {
     ['meta', { property: 'og:url', content: url }],
     ['meta', { property: 'og:locale', content: english ? 'en_US' : 'zh_CN' }],
     ['meta', { property: 'og:image', content: image }],
-    ['meta', { property: 'og:image:width', content: '2224' }],
-    ['meta', { property: 'og:image:height', content: '1424' }],
+    ['meta', { property: 'og:image:width', content: '2880' }],
+    ['meta', { property: 'og:image:height', content: '1800' }],
     ['meta', { property: 'og:image:alt', content: imageAlt }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: title }],
@@ -66,8 +66,8 @@ export function pageHead(page: PageData, srcDir: string): HeadConfig[] {
         operatingSystem: 'macOS, iOS, iPadOS',
         downloadUrl: `https://apps.apple.com/${english ? '' : 'cn/'}app/id6443971843`,
         featureList: english
-          ? ['Mac clipboard history search', 'Source app filters on Mac and synced records on iOS', 'User-triggered text and link capture with Shortcuts and iPhone Back Tap', 'Pin and custom groups', 'iCloud sync', 'iPhone snippet keyboard without Allow Full Access']
-          : ['Mac 剪贴板历史搜索', 'Mac 与 iOS 同步记录的来源应用筛选', '通过快捷指令与 iPhone 轻点背面主动收集文本和链接', 'Pin 与自定义分组', 'iCloud 同步', '无需完全访问的 iPhone 常用文本快捷键盘'],
+          ? ['Mac app launcher with name, pinyin and initials search', 'Customizable launcher shortcut and search scopes on Mac', 'Mac clipboard history search', 'Source app filters on Mac and synced records on iOS', 'User-triggered text and link capture with Shortcuts and iPhone Back Tap', 'Pin and custom groups', 'iCloud sync', 'iPhone snippet keyboard without Allow Full Access']
+          : ['支持名称、拼音与首字母搜索的 Mac 应用启动器', 'Mac 启动器快捷键与扫描范围设置', 'Mac 剪贴板历史搜索', 'Mac 与 iOS 同步记录的来源应用筛选', '通过快捷指令与 iPhone 轻点背面主动收集文本和链接', 'Pin 与自定义分组', 'iCloud 同步', '无需完全访问的 iPhone 常用文本快捷键盘'],
       },
     ],
   } : {

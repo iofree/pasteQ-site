@@ -1,5 +1,63 @@
 [
   {
+    "file": "launcher-zh.png",
+    "webVersion": "launcher-zh.webp",
+    "source": "assets/launcher-zh-Hans-4x.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": null,
+    "width": 2560,
+    "height": 1760,
+    "note": "沿用现有真实启动器布局与固定八个应用示例，不读取用户剪贴板；WebP 无损编码"
+  },
+  {
+    "file": "launcher-en.png",
+    "webVersion": "launcher-en.webp",
+    "source": "assets/launcher-en-4x.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": null,
+    "width": 2560,
+    "height": 1760,
+    "note": "沿用现有英文启动器与固定示例；WebP 无损编码"
+  },
+  {
+    "file": "clipboard-demo-zh.png",
+    "webVersion": "clipboard-demo-zh.webp",
+    "source": "assets/public-clipboard-crop.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": null,
+    "width": 1466,
+    "height": 880,
+    "note": "公开市场素材中的完整剪贴板窗口与示例回复；WebP 无损编码"
+  },
+  {
+    "file": "clipboard-demo-en.png",
+    "webVersion": "clipboard-demo-en.webp",
+    "source": "assets/existing-en-mac-01.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": [149, 749, 1615, 1629],
+    "width": 1466,
+    "height": 880,
+    "note": "从公开英文市场图裁出完整剪贴板窗口与示例回复；WebP 无损编码"
+  },
+  {
+    "file": "clipboard-launcher-social-zh.png",
+    "source": "bilingual-v9-hd/zh-Hans/screenshots/01-剪贴板与应用启动器-完整界面.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": null,
+    "width": 2880,
+    "height": 1800,
+    "note": "沿用现有双语市场图中文首图，用于社交分享"
+  },
+  {
+    "file": "clipboard-launcher-social-en.png",
+    "source": "bilingual-v9-hd/en/screenshots/01-clipboard-and-launcher.png",
+    "sourceDirectory": "2026-11-24 应用启动器双语市场素材",
+    "crop": null,
+    "width": 2880,
+    "height": 1800,
+    "note": "沿用现有双语市场图英文首图，用于社交分享"
+  },
+  {
     "file": "source-filter-mac.webp",
     "source": "macOS-来源筛选-原图.png",
     "sourceDirectory": "宣传/截图",

@@ -1,23 +1,214 @@
-.VPHero.has-image .image-src {
-  max-height: 350px;
-  width: 100%;
-  max-width: 560px;
-  object-fit: contain;
+.VPHome .VPHero.VPHomeHero {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M64 0H0V64' fill='none' stroke='%2394a3b8' stroke-opacity='.1'/%3E%3C/svg%3E");
 }
 
-@media (min-width: 960px) {
-  .VPHero.has-image .container {
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-    gap: 48px;
+.VPHomeHero .container {
+  text-align: center;
+}
+
+.VPHomeHero .main {
+  width: 100%;
+}
+
+.VPHomeHero .text,
+.VPHomeHero .tagline {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.VPHomeHero .text {
+  font-size: clamp(32px, 4.5vw, 64px);
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
+
+.hero-title-part {
+  display: inline-block;
+}
+
+.VPHomeHero .hero-title-part:first-child {
+  color: var(--vp-c-brand-1);
+}
+
+.VPHomeHero .tagline {
+  max-width: 760px;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.VPHomeHero .actions {
+  justify-content: center;
+}
+
+.VPHomeHero .actions .action .VPButton {
+  padding: 0 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 42px;
+  box-shadow: none;
+}
+
+.VPHomeHero .actions .action .VPButton:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.product-hero {
+  max-width: 1152px;
+  margin: -12px auto 56px;
+  padding: 24px 28px 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.product-hero-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+
+.product-hero-topline > span:first-child {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+.product-hero-topline > span:last-child {
+  font-family: var(--vp-font-family-mono);
+}
+
+.product-windows {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: end;
+}
+
+.product-windows figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.product-windows figcaption {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.product-windows figcaption span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--vp-c-brand-1);
+}
+
+.product-windows figcaption strong {
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.4;
+}
+
+.product-window {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #55535d;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px #15121b1a;
+  cursor: zoom-in;
+}
+
+.product-hero-caption {
+  margin: 20px 0 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+.product-hero-caption a {
+  color: var(--vp-c-brand-1);
+  white-space: nowrap;
+}
+
+.VPHome .VPFeature {
+  border-color: var(--vp-c-divider);
+  background: var(--vp-c-bg);
+}
+
+.feature-screenshot:focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+
+.launcher-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 40px;
+  margin: 28px 0;
+}
+
+.launcher-detail > div {
+  min-width: 0;
+}
+
+.comparison-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.vp-doc .comparison-links a {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding: 24px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+  text-decoration: none;
+}
+
+.comparison-links span {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+@media (max-width: 1279px) {
+  .product-hero {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-hero {
+    margin: 0 24px 40px;
+    padding: 20px;
   }
 
-  .VPHero.has-image .main {
-    width: auto;
+  .product-windows,
+  .launcher-detail,
+  .comparison-links {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
   }
 
-  .VPHero.has-image .image-container {
-    transform: none;
+  .product-hero-caption a {
+    white-space: normal;
+  }
+
+  .VPHomeHero .text {
+    letter-spacing: -0.5px;
   }
 }
 
@@ -122,10 +313,6 @@
 }
 
 @media (max-width: 768px) {
-  .VPHero.has-image .image-src {
-    max-height: 240px;
-  }
-  
   .platform-showcase {
     flex-direction: column;
     align-items: center;

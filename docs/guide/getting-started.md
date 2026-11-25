@@ -1,11 +1,11 @@
 ---
-title: Mac 剪贴板快速上手与 iPhone 常用语输入
-description: 从 Mac 剪贴板历史搜索、来源筛选和 Pin 分组开始，了解 PasteQ 的快捷键、iCloud 同步、iPhone 轻点背面收集与键盘常用文本输入。
+title: Mac 应用启动器、剪贴板快速上手与 iPhone 常用语输入
+description: 了解 PasteQ 的 Mac 应用启动器、快捷键与扫描范围，以及剪贴板历史搜索、来源筛选、Pin 分组、iCloud 同步和 iPhone 轻点背面收集与键盘输入。
 ---
 
 # PasteQ 快速上手
 
-PasteQ 在 Mac 上记录剪贴板历史、识别复制来源，帮助您找回和整理复制过的内容。iPhone 和 iPad 可通过快捷指令主动收集文本和链接，或通过个人 iCloud 同步查看记录，再通过 PasteQ 键盘使用 Pin 或自定义分组中的常用文本。
+PasteQ 在 Mac 上记录剪贴板历史、识别复制来源，帮助您找回和整理复制过的内容，也可启用应用启动器，用键盘搜索并打开 Mac 应用。iPhone 和 iPad 可通过快捷指令主动收集文本和链接，或通过个人 iCloud 同步查看记录，再通过 PasteQ 键盘使用 Pin 或自定义分组中的常用文本。
 
 先从 [App Store 下载 PasteQ](https://apps.apple.com/cn/app/id6443971843)，以下快捷键适用于 Mac。
 
@@ -43,6 +43,23 @@ PasteQ 的设计理念是尽可能减少鼠标操作，并且不需要记忆快�
 
 - **快捷键自动提示**：底部提示栏会自动提示当前可做的操作，自动提示其快捷键。
 - **设置**：在 设置 中，可以查看更多特性开关。
+
+## Mac 应用启动器 {#app-launcher}
+
+应用启动器仅适用于 Mac，默认关闭。开启后，用独立的快捷键搜索并打开应用：
+
+1. 在 PasteQ“设置 → 应用启动器”中开启“应用启动器”。
+2. PasteQ 运行时，按 `Option + Space`（默认）呼出启动器；可在“设置 → 应用启动器 → 启动器热键”中修改。剪贴板窗口仍使用自己的快捷键，默认为 `Option + C`。
+3. 输入应用的中文名、英文名、拼音全拼、拼音首字母或英文单词首字母。例如，用 `weixin` 或 `wx` 查找“微信”，用 `vsc` 查找 Visual Studio Code。
+4. 用 `↑`、`↓` 选择应用，按 `Enter` 打开，按 `Esc` 关闭启动器。
+
+<img src="/images/screenshots/launcher-zh.webp" data-full-src="/images/screenshots/launcher-zh.png" alt="PasteQ Mac 应用启动器：搜索应用并用键盘打开" width="2560" height="1760" loading="lazy" decoding="async" class="feature-screenshot" role="button" tabindex="0" aria-label="放大截图：PasteQ Mac 应用启动器">
+
+### 设置扫描范围
+
+打开“设置 → 应用启动器 → 扫描范围”，点击“添加目录或应用”，选择要包含的文件夹或 `.app` 应用，在“预览应用”中确认后添加。展开范围可查看其中的应用；内置范围可以开关，自行添加的范围可以“移除”，也可用“恢复默认”回到默认范围设置。
+
+想了解如何搭配自己的工作流？参阅 [PasteQ 与 Raycast](/compare/raycast) 和 [PasteQ 与 Tinycast](/compare/tinycast)。
 
 ## 管理您的剪贴板
 

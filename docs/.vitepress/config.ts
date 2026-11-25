@@ -4,7 +4,7 @@ import { pageHead } from './seo'
 export default defineConfig({
   title: 'PasteQ',
   titleTemplate: ':title - PasteQ',
-  description: 'PasteQ 是 Mac、iPhone 和 iPad 剪贴板管理工具，支持历史搜索、来源筛选、iCloud 同步、iPhone 轻点背面收集与常用文本快捷键盘。',
+  description: 'PasteQ 提供 Mac 应用启动器与 Mac、iPhone、iPad 剪贴板管理，支持拼音找应用、历史搜索、来源筛选、iCloud 同步、iPhone 轻点背面收集与快捷键盘。',
   lang: 'zh-CN',
   cleanUrls: true,
   outDir: '../dist',
@@ -37,9 +37,25 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/' },
           { text: '指南', link: '/guide/getting-started' },
+          { text: '工具对比', items: [
+            { text: 'PasteQ 与 Raycast', link: '/compare/raycast' },
+            { text: 'PasteQ 与 Tinycast', link: '/compare/tinycast' },
+            { text: 'Raycast、Tinycast 怎么选', link: '/compare/raycast-vs-tinycast' },
+          ] },
           { text: 'App Store', link: 'https://apps.apple.com/cn/app/id6443971843' }
         ],
         sidebar: {
+          '/compare/': [
+            {
+              text: '工具对比',
+              items: [
+                { text: 'PasteQ 与 Raycast', link: '/compare/raycast' },
+                { text: 'PasteQ 与 Tinycast', link: '/compare/tinycast' },
+                { text: 'Raycast、Tinycast 怎么选', link: '/compare/raycast-vs-tinycast' },
+                { text: '开始使用 PasteQ', link: '/guide/getting-started' },
+              ],
+            },
+          ],
           '/guide/': [
             {
               text: '使用指南',
@@ -73,14 +89,30 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      description: 'PasteQ is a clipboard manager for Mac, iPhone and iPad with history search, source filters, iCloud sync, iPhone Back Tap capture and a keyboard for saved snippets.',
+      description: 'PasteQ combines a Mac app launcher with clipboard management for Mac, iPhone and iPad, including pinyin app search, source filters, iCloud sync, Back Tap capture and a saved-text keyboard.',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/getting-started' },
+          { text: 'Compare', items: [
+            { text: 'PasteQ vs Raycast', link: '/en/compare/raycast' },
+            { text: 'PasteQ vs Tinycast', link: '/en/compare/tinycast' },
+            { text: 'Raycast vs Tinycast', link: '/en/compare/raycast-vs-tinycast' },
+          ] },
           { text: 'App Store', link: 'https://apps.apple.com/app/id6443971843' }
         ],
         sidebar: {
+          '/en/compare/': [
+            {
+              text: 'Compare Tools',
+              items: [
+                { text: 'PasteQ vs Raycast', link: '/en/compare/raycast' },
+                { text: 'PasteQ vs Tinycast', link: '/en/compare/tinycast' },
+                { text: 'Raycast vs Tinycast', link: '/en/compare/raycast-vs-tinycast' },
+                { text: 'Get Started with PasteQ', link: '/en/guide/getting-started' },
+              ],
+            },
+          ],
           '/en/guide/': [
             {
               text: 'User Guide',

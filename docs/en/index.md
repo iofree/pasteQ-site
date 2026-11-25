@@ -1,25 +1,18 @@
 ---
 layout: home
-title: Clipboard Manager for Mac, iPhone & iPad
-description: Search Mac clipboard history and filter by source. Set up Back Tap on iPhone to capture copied text and links, then reuse them with the PasteQ keyboard.
+title: Mac App Launcher & Clipboard Manager with iOS Sync
+description: Launch Mac apps by name, pinyin or initials, search clipboard history and filter by source. PasteQ adds iCloud sync, iPhone Back Tap capture and a saved-text keyboard.
 
 hero:
-  name: "PasteQ"
-  text: "Copy on Mac.<br>Reuse on iPhone."
-  tagline: Find Mac clipboard history by source. On iPhone, copy text, capture it with Back Tap, and reuse it with the PasteQ keyboard. Sync your devices with iCloud.
-  image:
-    src: /images/screenshots/mac-iphone-overview-en.webp
-    alt: Save on Mac and paste on iPhone with PasteQ, iCloud sync, groups, source filters and keyboard shortcuts
-    width: 1920
-    height: 1200
-    fetchpriority: high
+  text: '<span class="hero-title-part">Clipboard +</span> <span class="hero-title-part">Mac App Launcher</span>'
+  tagline: Find what you copied. Launch your next Mac app. Sync with iCloud to iPhone and iPad, then reuse saved text with the PasteQ keyboard.
   actions:
     - theme: brand
       text: Download for free
       link: https://apps.apple.com/app/id6443971843
     - theme: alt
-      text: See how it works
-      link: /en/guide/getting-started
+      text: Explore the app launcher
+      link: /en/#app-launcher
 features:
   - title: "Find your Mac clipboard history"
     details: "Keep copied text, images and links. Open the floating window and search by keyword when you need something again, without retracing chats or web pages."
@@ -27,9 +20,9 @@ features:
   - title: "Remember the source? Start there."
     details: "PasteQ identifies source apps on Mac. Filter and search by source on both Mac and iOS to narrow down the records you need."
     link: /en/guide/getting-started#source-filters
-  - title: "Keep your hands on the keyboard"
-    details: "Open the Mac window, search, filter, copy and paste with shortcuts. The hint bar shows which actions are available as you work."
-    link: /en/guide/getting-started
+  - title: "Find an app. Press Enter."
+    details: "Enable the Mac app launcher, open it with Option + Space, then search by name, pinyin or initials. Choose your own search scopes and shortcut."
+    link: /en/guide/getting-started#app-launcher
   - title: "Pin it. Group it. Use it again."
     details: "Save replies, code snippets and links in Pin or custom groups. Pick from content you have already organized the next time you need it."
     link: /en/guide/getting-started
@@ -40,6 +33,26 @@ features:
     details: "Set up the shortcut, copy text or a link, and capture it with Back Tap. Keep automatic pinning enabled to reuse it from Pinned. No Allow Full Access required."
     link: /en/guide/back-tap-clipboard
 ---
+
+## Your next Mac app, a search away {#app-launcher}
+
+<div class="launcher-detail">
+  <img src="/images/screenshots/launcher-en.webp" data-full-src="/images/screenshots/launcher-en.png" alt="Complete PasteQ Mac app launcher with an app list, search field and keyboard hints for selecting, opening and closing" width="2560" height="1760" loading="lazy" decoding="async" class="feature-screenshot product-window" role="button" tabindex="0" aria-label="Enlarge Mac app launcher screenshot">
+  <div>
+    <h3>Search the way you remember</h3>
+    <p>Type an English or Chinese app name, Chinese pinyin, or word initials. Try <code>as</code> for Android Studio. For Chinese names, “文本”, <code>wenben</code> and <code>wb</code> can all find “文本编辑”.</p>
+    <h3>Search, select and open with the keyboard</h3>
+    <p><kbd>⌥ Space</kbd> opens the launcher, <kbd>↑</kbd> <kbd>↓</kbd> select an app, <kbd>Enter</kbd> opens it, and <kbd>Esc</kbd> closes the panel. Use <kbd>⌥ C</kbd> when you need your clipboard instead.</p>
+    <p>The launcher is Mac-only and off by default. Enable it in Settings → App Launcher, where you can also change search scopes and the launcher shortcut.</p>
+    <p><a href="/en/guide/getting-started#app-launcher">Set up the app launcher →</a></p>
+  </div>
+</div>
+
+## Keep your clipboard workflow on the keyboard
+
+Press **Option + C** on Mac to open your clipboard, then search for copied text, images and links. Use source filters, Pin and groups to find saved items. Open, search, filter, copy and paste with shortcuts; the hint bar shows which actions are available as you work.
+
+[Get started with clipboard history →](/en/guide/getting-started)
 
 ## Take a saved reply from Mac to iPhone
 
@@ -59,7 +72,7 @@ features:
 <div class="platform-showcase">
   <div class="platform-item">
     <h3>macOS clipboard history</h3>
-    <img src="/images/screenshots/en.webp" alt="PasteQ clipboard history, search and groups on Mac" width="2224" height="1424" loading="lazy" decoding="async">
+    <img src="/images/screenshots/clipboard-demo-en.webp" data-full-src="/images/screenshots/clipboard-demo-en.png" alt="Complete PasteQ Mac clipboard window with search, groups, saved reply examples and keyboard hints" width="1466" height="880" loading="lazy" decoding="async" class="feature-screenshot" role="button" tabindex="0" aria-label="Enlarge Mac clipboard screenshot">
     <div class="platform-sub-screenshots">
       <img src="/images/screenshots/en-setting1.webp" alt="PasteQ Mac general settings, click to enlarge" width="2224" height="1424" loading="lazy" decoding="async" class="sub-screenshot" role="button" tabindex="0" aria-label="Enlarge Mac general settings screenshot">
       <img src="/images/screenshots/en-setting2.webp" alt="PasteQ Mac feature settings, click to enlarge" width="2224" height="1424" loading="lazy" decoding="async" class="sub-screenshot" role="button" tabindex="0" aria-label="Enlarge Mac feature settings screenshot">
@@ -89,7 +102,21 @@ Looking for a link copied in your browser, or text saved from a work app? PasteQ
 
 [Learn how source filters work on Mac and iPhone →](/en/guide/getting-started#source-filters)
 
+## Prefer a simpler Raycast or Tinycast alternative? {#compare}
+
+PasteQ keeps its scope focused: find copied content, reuse saved text and open Mac apps, with the essentials for everyday use. The app launcher is Mac-only, off by default and yours to enable when needed. If your work calls for extensions, AI or a wider set of integrated tools, explore what Raycast and Tinycast offer too.
+
+<div class="comparison-links">
+  <a href="/en/compare/raycast"><strong>PasteQ vs Raycast</strong><span>Explore PasteQ's focus on essentials alongside Raycast's extensions and AI workflows.</span></a>
+  <a href="/en/compare/tinycast"><strong>PasteQ vs Tinycast</strong><span>Compare PasteQ's focused workflow with Tinycast's open-source Mac toolbox.</span></a>
+  <a href="/en/compare/raycast-vs-tinycast"><strong>Raycast vs Tinycast</strong><span>Start with what you need, including PasteQ's simpler scope and optional launcher.</span></a>
+</div>
+
 ## Before you download
+
+### Does the app launcher work on iPhone?
+
+The app launcher is Mac-only. On iPhone and iPad, PasteQ offers clipboard management, iCloud sync and a keyboard for saved text. Mobile quick capture requires you to run a shortcut. [Explore the Mac app launcher](/en/guide/getting-started#app-launcher).
 
 ### How is PasteQ different from Universal Clipboard?
 

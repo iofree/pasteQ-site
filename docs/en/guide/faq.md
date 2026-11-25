@@ -1,15 +1,29 @@
 ---
-title: Back Tap Capture, iCloud Sync and Keyboard FAQ
-description: Troubleshoot PasteQ's Back Tap capture, Mac paste permissions, iCloud sync and iPhone keyboard. Learn how automatic pinning, source filters and iOS clipboard access work.
+title: Mac App Launcher, Back Tap Capture, Sync and Keyboard FAQ
+description: Troubleshoot PasteQ's Mac app launcher hotkey and search scopes, Back Tap capture, automatic paste, iCloud sync and iPhone keyboard, including automatic pinning and source filters.
 ---
 
 # PasteQ Frequently Asked Questions
 
-Here are the most common questions and solutions for users of PasteQ.
+Here are the most common questions and solutions for PasteQ's Mac app launcher, clipboard, sync and iPhone keyboard.
 
 ## Does PasteQ start automatically when I log in?
 
 The current version does not have an in-app launch-at-login switch. You can add PasteQ to the Open at Login list in macOS under System Settings → General → Login Items. Labels may vary by macOS version.
+
+## How do I enable the app launcher, and why does its hotkey do nothing?
+
+The app launcher is off by default. Make sure PasteQ is running on your Mac, enable it under Settings → App Launcher, then press `Option + Space` (default). If you customized the shortcut, use the current Launcher Hotkey. The clipboard window defaults to `Option + C` and has its own hotkey. If PasteQ reports a hotkey conflict, choose an unused combination under Settings → App Launcher → Launcher Hotkey that differs from your clipboard shortcut, then try again.
+
+See the [app launcher guide](./getting-started#app-launcher) for the full steps.
+
+## Why is an app missing from launcher search?
+
+Check Settings → App Launcher → Search Scopes to make sure the app's location is included and any relevant built-in scope is enabled. Use Add folder or app to select the containing folder or the `.app` bundle itself, review the preview and confirm, then reopen the launcher and search again. Try its Chinese or English name, pinyin or initials. If the scopes page fails to load, click Retry.
+
+## Is the launcher available on iPhone, and how does the workflow compare with Raycast or Tinycast?
+
+The app launcher is Mac-only, off by default and optional. PasteQ keeps its scope focused on clipboard history, saved text and app launching, with separate hotkeys for app search and clipboard history. On iPhone, use the capture, sync and keyboard workflows below. Start with the scope you need, then compare everyday tasks in [PasteQ vs Raycast](/en/compare/raycast) and [PasteQ vs Tinycast](/en/compare/tinycast).
 
 ## Why does pressing Enter on Mac not paste automatically?
 

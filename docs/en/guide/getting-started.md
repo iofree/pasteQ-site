@@ -1,11 +1,11 @@
 ---
-title: Getting Started with Clipboard History on Mac and iPhone
-description: Learn PasteQ's Mac shortcuts, clipboard search, source filters and Pin groups, then capture text with iPhone Back Tap or sync it through iCloud for keyboard reuse.
+title: Getting Started with the Mac App Launcher, Clipboard and iPhone Keyboard
+description: Learn PasteQ's Mac app launcher, shortcuts, search scopes and clipboard tools, plus iPhone Back Tap capture and iCloud sync for keyboard reuse.
 ---
 
 # Getting Started with PasteQ
 
-PasteQ saves clipboard history and identifies source apps on Mac, helping you find and organize copied content. On iPhone and iPad, you can capture text and links by running a shortcut or view records synced through your personal iCloud account, then use pinned or grouped text with the PasteQ keyboard.
+PasteQ saves clipboard history and identifies source apps on Mac, helping you find and organize copied content. You can also enable its app launcher to search for and open Mac apps with your keyboard. On iPhone and iPad, you can capture text and links by running a shortcut or view records synced through your personal iCloud account, then use pinned or grouped text with the PasteQ keyboard.
 
 Start by [downloading PasteQ from the App Store](https://apps.apple.com/app/id6443971843). The shortcuts below apply to Mac.
 
@@ -43,6 +43,23 @@ Remember which app you copied from, but not the exact text? Open the source filt
 
 - **Automatic Hotkey Hints**: The bottom bar automatically shows the currently available actions and their hotkeys.
 - **Settings**: In the Settings, you can explore more feature toggles.
+
+## Mac App Launcher {#app-launcher}
+
+The app launcher is available only on Mac and is off by default. Enable it to search for and open apps with its own hotkey:
+
+1. Open Settings → App Launcher in PasteQ and turn on App Launcher.
+2. With PasteQ running, press `Option + Space` (default) to open the launcher. Customize it under Settings → App Launcher → Launcher Hotkey. The clipboard window keeps its own hotkey, which defaults to `Option + C`.
+3. Type a Chinese or English app name, full pinyin, pinyin initials or English word initials. For example, use `weixin` or `wx` to find 微信, or `vsc` to find Visual Studio Code.
+4. Use `↑` and `↓` to select an app, `Enter` to open it and `Esc` to close the launcher.
+
+<img src="/images/screenshots/launcher-en.webp" data-full-src="/images/screenshots/launcher-en.png" alt="PasteQ Mac app launcher: search for apps and open them with the keyboard" width="2560" height="1760" loading="lazy" decoding="async" class="feature-screenshot" role="button" tabindex="0" aria-label="Enlarge screenshot: PasteQ Mac app launcher">
+
+### Set Search Scopes
+
+Open Settings → App Launcher → Search Scopes, click Add folder or app, and choose the folders or `.app` bundles to include. Review the apps in Preview apps and confirm to add the selection. Expand a scope to see its apps. Built-in scopes have on/off switches; custom scopes have a Remove action. Restore defaults returns to the default scope settings.
+
+To see how PasteQ fits your workflow, read [PasteQ vs Raycast](/en/compare/raycast) and [PasteQ vs Tinycast](/en/compare/tinycast).
 
 ## Managing Your Clipboard
 

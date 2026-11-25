@@ -1,10 +1,14 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import { onMounted, onUnmounted } from 'vue'
+import { h, onMounted, onUnmounted } from 'vue'
 import FeatureShowcase from './components/FeatureShowcase.vue'
+import ProductHero from './components/ProductHero.vue'
 
 export default {
   ...DefaultTheme,
+  Layout: () => h(DefaultTheme.Layout, null, {
+    'home-hero-after': () => h(ProductHero),
+  }),
   enhanceApp({ app }) {
     app.component('FeatureShowcase', FeatureShowcase)
   },
@@ -30,7 +34,7 @@ export default {
         if (event instanceof KeyboardEvent && event.key !== 'Enter' && event.key !== ' ') return;
         event.preventDefault();
         trigger = target;
-        screenshot.src = target.currentSrc || target.src;
+        screenshot.src = target.dataset.fullSrc || target.currentSrc || target.src;
         screenshot.alt = target.alt;
         dialog.setAttribute('aria-label', target.alt);
         close.setAttribute('aria-label', document.documentElement.lang.startsWith('zh') ? '关闭截图' : 'Close screenshot');
